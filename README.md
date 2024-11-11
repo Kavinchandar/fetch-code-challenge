@@ -1,4 +1,5 @@
 # Receipt Processor (Fetch code challenge - My Submission)
+Built backend using Flask with a Dockerized setup to run the code
 
 # Table of Contents
 
