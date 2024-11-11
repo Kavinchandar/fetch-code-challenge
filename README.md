@@ -1,5 +1,16 @@
 # Receipt Processor (Fetch code challenge - My Submission)
 
+# Table of Contents
+
+1. [How to run the application](#how-to-run-the-application)
+   1. [Clone the Repository](#1-clone-the-repository)
+   2. [Build Docker Image](#2-build-docker-image)
+   3. [Docker run to start a container to run the app](#3-docker-run-to-start-a-container-to-run-the-app)
+   4. [Test Endpoints (Check summary of API)](#4-test-endpoints-check-summary-of-api)
+2. [Summary of API Specification](#summary-of-api-specification)
+   1. [Endpoint: Process Receipts](#endpoint-process-receipts)
+   2. [Endpoint: Get Points](#endpoint-get-points)
+
 
 ## How to run the application
 
