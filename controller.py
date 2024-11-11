@@ -19,6 +19,7 @@ def handle_process_receipt():
         return jsonify({"id": receipt.id}), 200
     except ValueError as e:
         return jsonify({"error": str(e)}), 400
+    
 
 # Handler for retrieving receipt points by ID
 @app.route('/receipts/<receipt_id>/points', methods=['GET'])
