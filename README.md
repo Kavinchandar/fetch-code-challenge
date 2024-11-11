@@ -1,6 +1,5 @@
 # Receipt Processor (Fetch code challenge - My Submission)
 
----
 ## Summary of API Specification
 
 ### Endpoint: Process Receipts
@@ -41,7 +40,7 @@ Example Response:
 
 ---
 
-Provide any instructions required to run your application.
+## How to run the application
 
 
 
