@@ -10,6 +10,7 @@
 2. [Summary of API Specification](#summary-of-api-specification)
    1. [Endpoint: Process Receipts](#endpoint-process-receipts)
    2. [Endpoint: Get Points](#endpoint-get-points)
+3. [Design Decisions](#design-decisions)
 
 
 ## How to run the application
