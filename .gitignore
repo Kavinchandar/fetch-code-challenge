@@ -66,14 +66,6 @@ celerybeat-schedule
 instance/
 .webassets-cache
 
-# Docker
-*.dockerignore
-Dockerfile
-docker-compose.yml
-**/Dockerfile
-**/docker-compose.yml
-*.db
-*.sqlite3
 
 # PyCharm
 .idea/

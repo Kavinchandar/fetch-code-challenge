@@ -1,0 +1,21 @@
+# Ignore the virtual environment directory
+venv/
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore other development files
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Ignore test directories or files if not needed in production
+tests/
+*.log
+
+# Ignore any system-specific files
+*.DS_Store
+.env
