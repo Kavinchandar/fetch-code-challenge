@@ -24,7 +24,7 @@ docker build -t receipt-processor-app .
 docker run -p 8080:8080 receipt-processor-app
 ```
 
-## 4. Test Endpoints (Check summary of endpoints for more information)
+## 4. Test Endpoints (Check summary of API)
 
 Test 
 1. POST `http://127.0.0.1:8080/receipts/process` with 
