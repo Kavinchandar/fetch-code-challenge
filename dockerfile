@@ -11,6 +11,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the application code to the container
 COPY . /app
 
+# Run the specific unit test file
+RUN python -m unittest test_controller.py
+
 # Expose the port that the Flask app will run on
 EXPOSE 8080
 
