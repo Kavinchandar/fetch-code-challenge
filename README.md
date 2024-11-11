@@ -1,8 +1,7 @@
-Fetch Code Challenge
-
-# Receipt Processor
+# Receipt Processor (Fetch code challenge - My Submission)
 
 Build a webservice that fulfils the documented API.
+
 
 ---
 ## Summary of API Specification
