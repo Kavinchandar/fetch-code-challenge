@@ -11,7 +11,7 @@ Follow these steps to run the application on a new machine.
 
 First, clone the repository to your local machine. Open a terminal and run:
 ```
-git clone [https://github.com/your-username/your-repository.git](https://github.com/Kavinchandar/fetch-code-challenge.git)
+git clone https://github.com/your-username/your-repository.git
 ```
 
 ## 2. Build Docker Image
