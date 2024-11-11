@@ -28,7 +28,7 @@ First, clone the repository to your local machine. Open a terminal and run:
 git clone https://github.com/your-username/your-repository.git
 ```
 
-## 2. Build Docker Image
+## 2. Build Docker Image (Note: Docker build will fail if unit tests are incorrect)
 ```
 docker build -t receipt-processor-app .
 ```
