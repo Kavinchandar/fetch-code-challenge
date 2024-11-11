@@ -3,10 +3,18 @@
 
 ## How to run the application
 
+# Running the Application
+
+Follow these steps to run the application on a new machine.
+
+## 1. Clone the Repository
+
+First, clone the repository to your local machine. Open a terminal and run:
+
 ```
+git clone https://github.com/your-username/your-repository.git
 ```
 
----
 
 
 ## Summary of API Specification
