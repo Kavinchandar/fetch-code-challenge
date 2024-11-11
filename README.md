@@ -74,14 +74,14 @@ The <receipt_id> is generated on posting a receipt.
 
 The decision to split the codebase into distinct layers of **controllers**, **services**, **models**, and **tests** follows established software engineering principles aimed at improving maintainability, scalability, and readability. Here's why each layer is utilized:
 
-### 1. **Controller Layer**
+### 1. **Controller Layer** `controller.py`
 The **controller** layer is responsible for handling incoming HTTP requests, managing the interaction with clients, and returning the appropriate responses. This layer serves as the interface between the external world and the core business logic of the application. By keeping the controller's responsibility focused only on handling HTTP requests and responses, we ensure that it remains thin and focused. This design also makes it easier to modify or replace the HTTP layer without affecting the core logic.
 
 Key Benefits:
 - **Separation of Concerns**: The controller only processes the incoming request and delegates business logic to the service layer.
 - **Simplicity**: Keeping controllers light and delegating logic to services makes the codebase easier to understand and extend.
 
-### 2. **Service Layer**
+### 2. **Service Layer** `services.py`
 The **service** layer contains the core business logic and is responsible for performing actions based on the input it receives from the controller. By centralizing the business logic here, we promote code reuse and make it easier to manage complex interactions between different parts of the application. The service layer interacts with the **model** layer to fetch or store data and applies necessary business rules or transformations.
 
 Key Benefits:
@@ -89,14 +89,14 @@ Key Benefits:
 - **Maintainability**: Business logic can be modified independently from the HTTP-related concerns, reducing the risk of introducing bugs in unrelated parts of the application.
 - **Testability**: The service layer can be tested in isolation from the web framework and controller, which improves test coverage and reduces complexity in testing.
 
-### 3. **Model Layer**
+### 3. **Model Layer** `models.py`
 The **model** layer is responsible for representing the application's data structure and interacting with the database or other data sources. In this case, models are typically responsible for validating and structuring the receipt data, ensuring that it conforms to the required format before being processed. The model layer abstracts away database-specific details and offers a clean interface for interacting with data.
 
 Key Benefits:
 - **Encapsulation**: By placing data structures and database interactions in models, we keep the application code clean and avoid cluttering the service or controller layers with database logic.
 - **Consistency**: The model layer ensures that data integrity is maintained, and validation is centralized.
 
-### 4. **Test Layer**
+### 4. **Test Layer** `test_controller.py`
 Tests are an essential part of the development process to ensure the correctness and reliability of the application. The test layer is organized to mirror the structure of the application, with unit and integration tests covering the controller, service, and model layers. Tests help verify that each part of the application behaves as expected, both individually and when integrated.
 
 Key Benefits:
