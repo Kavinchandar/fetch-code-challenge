@@ -1,0 +1,106 @@
+# Ignore virtual environments
+venv/
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+*.py,cover
+.cache
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# Pytest
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# dotenv
+.env
+.env.local
+.env.*.local
+*.env
+
+# Flask cache and session files
+instance/
+.webassets-cache
+
+# Docker
+*.dockerignore
+Dockerfile
+docker-compose.yml
+**/Dockerfile
+**/docker-compose.yml
+*.db
+*.sqlite3
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IntelliJ
+*.iml
+.idea/
+out/
+
+# Specific excludes for your project structure
+fetch-code-challenge/venv/
+fetch-code-challenge/__pycache__/
