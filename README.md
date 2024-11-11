@@ -10,12 +10,52 @@ Follow these steps to run the application on a new machine.
 ## 1. Clone the Repository
 
 First, clone the repository to your local machine. Open a terminal and run:
-
 ```
-git clone https://github.com/your-username/your-repository.git
+git clone [https://github.com/your-username/your-repository.git](https://github.com/Kavinchandar/fetch-code-challenge.git)
 ```
 
+## 2. Build Docker Image
+```
+docker build -t receipt-processor-app .
+```
 
+## 3. Docker run to start a container to run the app
+```
+docker run -p 8080:8080 receipt-processor-app
+```
+
+## 4. Test Endpoints
+
+Test 
+1. POST `http://127.0.0.1:8080/receipts/process` with 
+body
+```
+{
+  "retailer": "M&M Corner Market",
+  "purchaseDate": "2022-03-20",
+  "purchaseTime": "14:33",
+  "items": [
+    {
+      "shortDescription": "Gatorade",
+      "price": "2.25"
+    },{
+      "shortDescription": "Gatorade",
+      "price": "2.25"
+    },{
+      "shortDescription": "Gatorade",
+      "price": "2.25"
+    },{
+      "shortDescription": "Gatorade",
+      "price": "2.25"
+    }
+  ],
+  "total": "9.00"
+}
+```
+
+2. GET `http://localhost:8080/receipts/<receipt_id>/points`
+
+The <receipt_id> is generated on posting a recipt.
 
 ## Summary of API Specification
 
